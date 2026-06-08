@@ -1,0 +1,47 @@
+baseURL = "https://fireflies1145.github.io/"
+languageCode = "zh-cn"
+theme = "PaperMod"
+title = "Fireflies 科学上网"
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "🚀 Fireflies 节点工具"
+    Content = "稳定、快速的代理节点部署方案。一键脚本，开箱即用。"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/fireflies1145/jiaoben"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tools"
+    name = "工具"
+    url = "/tags/工具/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
